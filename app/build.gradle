@@ -1,0 +1,35 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "net.suttacentral.suttacentral.suttacentraltwa"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders = [
+                hostName: "suttacentral.net",
+                defaultUrl: "https://suttacentral.net",
+                launcherName: "SuttaCentral TWA",
+                assetStatements: '[{ "relation": ["delegate_permission/common.handle_all_urls"], ' +
+                        '"target": {"namespace": "web", "site": "https://suttacentral.net"}}]'
+        ]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.github.GoogleChrome:custom-tabs-client:e446d08014'
+}
