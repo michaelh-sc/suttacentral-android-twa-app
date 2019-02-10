@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "net.suttacentral.suttacentral.suttacentraltwa",
+    "sha256_cert_fingerprints":
+    ["43:C0:5B:8D:ED:9D:F4:70:2A:91:24:02:6C:7E:2E:2B:5A:8B:6C:5D:28:19:04:C7:3F:0F:70:02:91:DB:0F:2F"]
+  }
+}]
