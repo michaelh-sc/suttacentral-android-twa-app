@@ -10,11 +10,11 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         manifestPlaceholders = [
-                hostName: "suttacentral.net",
-                defaultUrl: "https://suttacentral.net",
+                hostName: "staging.suttacentral.net",
+                defaultUrl: "https://staging.suttacentral.net",
                 launcherName: "SuttaCentral TWA",
                 assetStatements: '[{ "relation": ["delegate_permission/common.handle_all_urls"], ' +
-                        '"target": {"namespace": "web", "site": "https://suttacentral.net"}}]'
+                        '"target": {"namespace": "web", "site": "https://staging.suttacentral.net"}}]'
         ]
     }
     buildTypes {
