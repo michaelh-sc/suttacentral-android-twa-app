@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="background">#CE8400</color>
+    <color name="background">#b37800</color>
     <color name="foreground">#000000</color>
     <color name="white">#FFFFFF</color>
-    <color name="status_bar_colour">#B37800</color>
+    <color name="status_bar_colour">#b37800</color>
 </resources>
